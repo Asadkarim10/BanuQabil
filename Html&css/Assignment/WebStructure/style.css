@@ -1,0 +1,65 @@
+.nav {
+    background-color: #f8f9fa; 
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.logo {
+    height: 50px;
+    width: 100px;
+}
+
+.btn {
+    background-color: #2d8e84;
+    border-radius: 3px; 
+    height: 35px; 
+    width: 120%; 
+    border:none; 
+    color: #f8f9fa; 
+    font-size: 14px;
+}
+
+.section1 {
+    height: 800px;
+}
+
+
+
+.videos {
+    display: flex; 
+    width: 100%; 
+    align-items: center;
+    justify-content: space-around;
+}
+
+.iframeRow1 {
+    width: 570px; 
+    height: 330px; 
+    margin-left: 60px;
+}
+.iframeRow2 {
+    width: 570px; 
+    height: 330px; 
+    margin-right:70px;
+}
+.Courses {
+
+    display:flex; 
+    align-items: center; 
+    justify-content: center; 
+    height: 100px; 
+    margin-top: 20px;
+
+}
+
+.card1 {
+
+    width: 330px;   
+    display: flex; 
+    justify-content: center; 
+    margin-top: 30px;
+
+}

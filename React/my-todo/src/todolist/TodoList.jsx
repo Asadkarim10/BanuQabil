@@ -27,11 +27,9 @@ export const TodoList = () => {
     const toBeDeletedIndex = items.findIndex((item) => item.id === id)
     items.splice(toBeDeletedIndex, 1)
     setItems([...items])
-    return alert("congratulation u have complete your task" + id)
+    return alert("you are deleting your completed task" + id)
   }
-
-  
-
+ 
   const addTask = (title) => {
     if (!title) {
       return alert("write something todo")
