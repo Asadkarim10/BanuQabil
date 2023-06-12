@@ -7,21 +7,23 @@ export const TodoList = () => {
   const [items, setItems] = useState([
     {
       id: 1,
-      title: "Learn React"
+      title: "Learn React",
+    
     },
     {
       id: 2,
-      title: "Learn Node"
+      title: "Learn Node",
+   
     },
     {
       id: 3,
-      title: "Learn Mongo"
+      title: "Learn MongoDB",
+    
     },
-    {
-      id: 4,
-      title: "Learn to be Insan"
-    }
+    
   ])
+
+
 
   const deleteTodo = (id) => {
     const toBeDeletedIndex = items.findIndex((item) => item.id === id)
@@ -39,6 +41,9 @@ export const TodoList = () => {
     setItems(newItems)
   }
 
+
+ 
+
   return (
     <div>
       <div className="bar">
@@ -47,7 +52,7 @@ export const TodoList = () => {
       <div className="todo-list shadow-lg">
         {items.map((item) => (
           <TodoItem
-            key={item.id}
+            key={item.id} 
             title={item.title}
             deleteTodo={() => {
             deleteTodo(item.id)
@@ -56,9 +61,7 @@ export const TodoList = () => {
         ))}
       </div>
       <AddTodo addTodo={addTask} />
-      {/* <button className="todo-add-btn rounded-md" onClick={addTask}>
-        + New Task
-      </button> */}
+  
     </div>
   )
 }

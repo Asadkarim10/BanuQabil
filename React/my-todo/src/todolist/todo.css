@@ -2,10 +2,9 @@
     background-color: #af7eeb;
     height: 60px;
     display: flex;
-    justify-content: center;
     align-items: center;
     padding: 0 20px;
-    width: 400px;
+    width: 100%;
     border-radius: 5px;
     color: white;
     font-size: 18px;
@@ -18,9 +17,8 @@
 }
 
 .todo-list {
-    width: 400px;
-    margin-top: 20px;
-    background-color: white;
+    width: 100%;
+    margin-top: 20px
 }
 
 .works {
@@ -30,28 +28,39 @@ flex-direction: row;
 
 .todo-item {
     display: flex;
+    width: 100%;
     justify-content: space-between;
     background-color: #af7eeb;
     align-items: center;
     padding: 0 20px;
     height: 40px;
+    border-radius: 4px;
+    margin-top: 4px;
 }
 
 .todo-add-btn {
     background-color: #af7eeb;
     color: white;
+    border: 2px solid #af7eeb;
     padding: 10px 20px;
     margin-top: 12px;
+    width: 300px;
     font-size: 16px;
+    border-color: #af7eeb;
 }
 
+.todo-task-title {
+    color: antiquewhite;
+}
 .input-field {
-    width: 400px;
+    width: 1200px;
+    margin-left: 40px;
     height: 40px;
-    outline: none;
-    padding: 0 20px;
+    align-self: center;
+    text-align: center;
     font-size: 16px;
     border-radius: 12px;
+    border-color: #af7eeb;
 }
 
 .add-todo {
@@ -61,3 +70,19 @@ flex-direction: row;
     flex-direction: column;
     align-items: center;
 }
+.border {
+    border-width: 10px solid black;
+    height: 5px;
+    width: 5px;
+    align-items: center;
+    align-self: center;
+}
+
+.img-but {
+    display: flex;
+    flex-direction: "row";
+    align-items: center;
+    width: 100px;
+    justify-content:space-between;
+}
+
