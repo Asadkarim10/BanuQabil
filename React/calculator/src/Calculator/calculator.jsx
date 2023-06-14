@@ -1,30 +1,48 @@
-import React ,{usestate } from 'react';
+import React ,{useState, usestate } from 'react';
+import './calc.css'
+
+
+
 
 export const Calculator = ()=> {
 
+const [ result, setResult]=useState('');
+
+const clickHandler=(event)=>{
+    setResult(result.concat(event.target.value))
+}
+
+const clearDisplay=()=> {
+    setResult('');
+}
+
+const calculate=()=> {
+    setResult(eval(result).toString())
+}
+
 return (
 
-<div>
+<div className='calc'>
 
-    <input type="text" />
-    <input type="button" value='9' />
-    <input type="button" value='8' />
-    <input type="button" value='7' />
-    <input type="button" value='6' />
-    <input type="button" value='5' />
-    <input type="button" value='4' />
-    <input type="button" value='3' />
-    <input type="button" value='2' />
-    <input type="button" value='1' />
-    <input type="button" value='0' />
-    <input type="button" value='.' />
-    <input type="button" value='-' />
-    <input type="button" value='+' />
-    <input type="button" value='*' />
-    <input type="button" value='/' />
-    <input type="button" value='=' />
-    <input type="button" value='C' />
-
+    <input type="text" placeholder='0' id='answer' value={result} />
+    <input type="button" value='9' className='button' onClick={clickHandler}/>
+    <input type="button" value='8' className='button' onClick={clickHandler}/>
+    <input type="button" value='7' className='button' onClick={clickHandler}/>
+    <input type="button" value='6' className='button' onClick={clickHandler}/>
+    <input type="button" value='5' className='button' onClick={clickHandler}/>
+    <input type="button" value='4' className='button' onClick={clickHandler}/>
+    <input type="button" value='3' className='button' onClick={clickHandler}/>
+    <input type="button" value='2' className='button' onClick={clickHandler}/>
+    <input type="button" value='1' className='button' onClick={clickHandler}/>
+    <input type="button" value='0' className='button' onClick={clickHandler}/>
+    <input type="button" value='.' className='button' onClick={clickHandler}/>
+    <input type="button" value='+' className='button' onClick={clickHandler}/>
+    <input type="button" value='-' className='button' onClick={clickHandler}/>
+    <input type="button" value='*' className='button' onClick={clickHandler}/>
+    <input type="button" value='/' className='button' onClick={clickHandler}/>
+    <input type="button" value='%' className='button' onClick={clickHandler}/>
+    <input type="button" value='Clear' onClick={clearDisplay} className='button button1'/>
+    <input type="button" value='=' onClick={calculate} className='button button1'/>
 </div>
 
 
