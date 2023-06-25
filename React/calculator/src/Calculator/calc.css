@@ -3,10 +3,14 @@
     background-color: black;
     height: 880px;
     border-radius: 40px;
+    padding-top: 40px;
 
 }
 
-
+.Asad {
+    color: white;
+    
+}
 .Inputt {
     background-color: black;
     height: 200px;
@@ -15,10 +19,13 @@
     border-top-left-radius: 40px;
     font-size: 90px;
     text-align: right;
-    color: white;
-    border-bottom-color: black; 
+    color: white; 
     border: none;
-       
+    border-color: black;   
+}
+
+input:focus {
+    outline:none;
 }
 
 /* #answer{
@@ -34,7 +41,6 @@
 } */
 
 .button {
-
     background-color: #313131;
     height: 105px;
     width: 105px;
@@ -42,7 +48,8 @@
     font-size: 50px;
     border-radius: 50px;
     float: left;
-    margin: 10px; 
+    margin: 10px;
+    border: none; 
 }
 .button2{
     background-color: #f69905;
@@ -52,7 +59,8 @@
     font-size: 50px;
     border-radius: 50px;
     float: left;
-    margin: 10px; 
+    margin: 10px;
+    border: none; 
 }
 .button1{
 width: 230px; 

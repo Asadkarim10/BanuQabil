@@ -23,11 +23,8 @@ return (
 
 
 <div className='wrapper'>
-<div className='line'>
-</div>
     <div className='calc' >
-    <input className='Inputt' type="text" placeholder='0' id='answer' value={result} />
-
+    <input className='Inputt' type="text" placeholder='0' placeholder-color='white' id='answer' value={result}/>
     <input type="button" value='9' className='button' onClick={clickHandler}/>
     <input type="button" value='8' className='button' onClick={clickHandler}/>
     <input type="button" value='7' className='button' onClick={clickHandler}/>
@@ -47,6 +44,12 @@ return (
     <input type="button" value='Clear' onClick={clearDisplay} className='button button1'/>
     <input type="button" value='=' onClick={calculate} className='button button1'/>
     </div>   
+
+<div className='line'>
+<h1 className='Asad'>--------</h1>
+</div>
+
+
 </div>
 
 
